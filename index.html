@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey-form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey-form</h1>
+    <p id="description">simple survey form</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label"
+          >Enter your Name:
+          <input type="text" id="name" required placeholder="dhana"
+        /></label>
+        <label for="email" id="email-label"
+          >Enter your email:
+          <input type="email" id="email" required placeholder="abc@mail.com"
+        /></label>
+        <label id="number-label" for="number"
+          >Enter your age:
+          <input type="number" id="number" min="18" max="50" placeholder="20"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown"
+          >select your language:
+          <select id="dropdown">
+            <option>Tamil</option>
+            <option>English</option>
+            <option>Hindhi</option>
+          </select></label
+        >
+        <label>Select which Genre you prefer: </label>
+        <label for="action"
+          ><input
+            type="radio"
+            id="action"
+            name="movies"
+            class="inline"
+            value="0"
+          />
+          Action</label
+        >
+        <label for="adventure"
+          ><input
+            type="radio"
+            id="adventure"
+            name="movies"
+            class="inline"
+            value="1"
+          />
+          Adventure</label
+        >
+        <label for="mystery"
+          ><input
+            type="radio"
+            id="mystery"
+            name="movies"
+            class="inline"
+            value="2"
+          />
+          Mystery</label
+        >
+        <label>Select your likes from below: </label>
+        <label for="swim"
+          ><input type="checkbox" id="swim" value="0" class="inline" />
+          Swimming</label
+        >
+        <label for="run"
+          ><input type="checkbox" id="run" value="1" class="inline" />
+          Running</label
+        >
+        <label for="walk"
+          ><input type="checkbox" id="walk" value="2" class="inline" />
+          Walking</label
+        >
+        <label for="cycle"
+          ><input type="checkbox" id="cycle" value="3" class="inline" />
+          Cycling</label
+        >
+        <label for="comments"
+          >Your Thoughts:
+          <textarea id="comments" placeholder="I am lazy..."></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <input type="submit" value="Submit" id="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
